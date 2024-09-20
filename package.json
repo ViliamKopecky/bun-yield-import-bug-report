@@ -3,8 +3,8 @@
   "module": "index.tsx",
   "type": "module",
   "scripts": {
-    "build": "bun build --compile --minify --sourcemap ./index.tsx --outfile ./index.bun",
-    "start": "./index.bun",
+    "build": "bun build --compile ./index.tsx --outfile ./dist/index.bun",
+    "start": "./dist/index.bun",
     "good": "bun run ./index.tsx",
     "bad": "bun run build && bun run start"
   },
